@@ -13,5 +13,9 @@ fun todoTask1(collection: Collection<Int>): Nothing = TODO(
 
 
 fun task1(collection: Collection<Int>): String {
-    todoTask1(collection)
+    // Javaコードを無視してるがいいのだ
+    val sb: Appendable = StringBuilder().apply { append("{") }
+    collection.joinTo(sb).append("}")
+    return sb.toString()
 }
+
