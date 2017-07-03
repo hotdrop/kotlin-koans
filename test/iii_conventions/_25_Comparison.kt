@@ -7,6 +7,7 @@ import org.junit.Test
 class _25_Comparison {
     @Test fun testDateComparison() {
         assertTrue(task25(MyDate(2014, 1, 1), MyDate(2014, 1, 2)))
+        assertTrue(task25(MyDate(2014, 1, 31), MyDate(2014, 2, 1)))
     }
 
     @Test fun testBefore() {
